@@ -224,7 +224,6 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     browser = webdriver.Chrome(options=options)
-    browser.get("https://data.molit.go.kr/member/login")
     wait = WebDriverWait(browser, 10)
 
     user_id = browser.find_element_by_xpath("//*[@id='main']/div[2]/div[2]/div[2]/div/form/fieldset/div/div[1]/input").send_keys(user)
